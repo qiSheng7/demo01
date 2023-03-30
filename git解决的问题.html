@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+</body>
+<script>
+    // 版本管理工具
+    /* 
+    github
+    gitee
+
+    仓库：被git管理的文件夹
+    本地仓库  远程仓库
+    推送 - 将本地仓库的文件上传到远程仓库
+    同步 - 将远程仓库的文件跟本地的仓库同步
+
+    本地文件夹成仓库：git init 
+    git管理仓库的时候，会将仓库分成3个部分：
+    工作区       红色文件
+    暂存区
+    历史区/版本区
+    查看文件状态：git status
+    将工作区文件放在暂存区：git add 文件名称
+    将文件夹所有文件放在暂存区：git add .
+    git add -all
+
+    将暂存区文件放回工作区：git reset HEAD -- 文件名
+    将所有暂存区文件都放回工作区：git reset HEAD --.
+
+    将暂存区文件放在历史区：git commit -m '版本号'
+    查看所有版本：git log
+    切换到上一个版本：git reset --hard HEAD^
+    ^ 一个表示回退一个版本， 多个上档建表示回退多个版本
+    切换到指定版本： git reset --hard 版本号
+
+    .gitignore - 设置黑名单 - 在仓库中新建这个文件夹(这个文件夹一定要和隐藏的.git文件夹保持在同级)
+    .gitkeep - git默认不管理空文件夹 - .gitkeep可以专门用来让空文件夹被管理
+
+    新建远程仓库 - 不选择初始化
+    本地创建仓库，提交一次 - 在本地形成历史区
+    让本地仓库和远程仓库保持一定的联系：git remote add origin 远程仓库地址
+    推动到远程：git push -u origin master - 输入账号面
+    将工作区的内容放到暂存区，将暂存区的内容放到历史区
+    推送：git push - 不需要账号密码 - 账号密码保存到本地计算机
+
+    新建远程仓库 - 选择初始化
+    将远程仓库克隆到本地：git clone 远程仓库的地址
+    将文件放进去
+    git add .
+    git commit -m ""
+
+    git push
+
+    // 分支就相当于多个人走多条路同时到达目的地 - 为了提高开发效率
+    // 创建新分支：git branch 分支名称
+    // 查看分支：git branch
+    // 切换分支：git checkout 分支名
+    // 分支合并：git merge 被合并的分支
+
+    // 创建并切换分支：git checkout -b 新的分支名
+    // 删除分支：git branch -D 被删除的分支
+
+
+    // 任何一个版本的形成，必须是原来版本基础上新增或修改过才行
+    // 主管： v1
+    // 张三：v1 - v2
+    // 李四：v1 - v3 - 冲突
+    // 解决冲突：先同步，再提交
+    同步命令：git pull
+    */
+</script>
+</html>
